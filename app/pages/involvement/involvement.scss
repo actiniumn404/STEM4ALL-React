@@ -127,7 +127,9 @@ html {
         img{
             width: min(var(--width), 500px);
             margin-top: 1em;
+            margin-left: 30px;
             border-radius: 4px;
+            float: right;
         }
     }
 }

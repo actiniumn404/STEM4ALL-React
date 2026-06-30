@@ -241,6 +241,7 @@ function Map({}){
 function Volunteer(){
     return <Section section_id="volunteer" section_content_id="volunteer-content" title="Volunteer">
         <div className="left">
+            <img src="app/assets/lander-mission.png" alt="Photograph of volunteers" />
             <p>
                 <b>Support</b> local STEM clubs and help make STEM education accessible to elementary students. Volunteers assist Club Leaders with activities, work with small groups of students, and help create a fun, welcoming, and engaging learning environment.
             </p>
@@ -256,7 +257,6 @@ function Volunteer(){
             <a href="TODO" target="_blank"><button className="small-button">Sign Up Here <FontAwesomeIcon icon={faArrowRight} /></button></a>
         </div>
         <div className="right">
-            <img src="app/assets/lander-mission.png" alt="Photograph of volunteers" />
         </div>
     </Section>
 }
@@ -264,6 +264,7 @@ function Volunteer(){
 function Lead(){
     return <Section section_id="lead" section_content_id="lead-content" title="Club Leader">
         <div className="left">
+            <img src="app/assets/involvement-lead.png" alt="Photograph of a club leader" />
             <p>
                 <b>Create and lead</b> a local STEM4ALL club and inspire the next generation of STEM learners. Club Leaders work with elementary schools to facilitate hands-on STEM activities, coordinate volunteers, and create a fun, safe, and engaging learning environment for students. This role is ideal for students interested in teaching, leadership, and making a positive impact in their community.        </p>
             <p><b>Responsibilities include:</b></p>
@@ -278,7 +279,6 @@ function Lead(){
             <a href="TODO" target="_blank"><button className="small-button">Apply Here <FontAwesomeIcon icon={faArrowRight} /></button></a>
         </div>
         <div className="right">
-            <img src="app/assets/involvement-lead.png" alt="Photograph of a club leader" />
         </div>
     </Section>
 }
@@ -289,6 +289,7 @@ function Join(){
             <p>
                 Help grow and strengthen STEM4ALL beyond individual clubs. Team Members work behind the scenes to support expansion efforts, develop resources, recruit volunteers, and build partnerships that increase STEM access in communities.
             </p>
+            <img src="app/assets/involvement-join.png" alt="Photograph of club members" />
             <p><b>Potential areas of involvement include:</b></p>
             <ul>
                 <li>Curriculum development</li>
@@ -304,7 +305,6 @@ function Join(){
             <a href="TODO" target="_blank"><button className="small-button">Apply Here <FontAwesomeIcon icon={faArrowRight} /></button></a>
         </div>
         <div className="right">
-            <img src="app/assets/involvement-join.png" alt="Photograph of club members" />
         </div>
     </Section>
 }
