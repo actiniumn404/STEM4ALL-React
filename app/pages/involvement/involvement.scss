@@ -9,6 +9,10 @@ $pin-color: #fb889f;
 $club-name-background: lightcoral;
 $club-name-text: white;
 
+html {
+    scroll-behavior: smooth;
+}
+
 #header{
     display: flex;
     justify-content: space-between;
@@ -110,6 +114,20 @@ $club-name-text: white;
             &.invisible{
                 display: none;
             }
+        }
+    }
+}
+
+#volunteer, #lead, #join{
+    line-height: 1.5;
+
+    .section-content{
+        display: flex;
+        gap: 30px;
+        img{
+            width: min(var(--width), 500px);
+            margin-top: 1em;
+            border-radius: 4px;
         }
     }
 }

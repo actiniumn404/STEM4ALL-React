@@ -1,7 +1,7 @@
 import "./involvement.scss"
 import Navbar from "~/components/navbar/navbar";
 import Section from "~/components/section/section";
-import {faHeart, faPerson, faStar} from "@fortawesome/free-solid-svg-icons";
+import {faArrowRight, faHeart, faPerson, faStar} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {useState} from "react";
 
@@ -23,7 +23,9 @@ export default function Involvement(){
         <Navbar></Navbar>
         <Header></Header>
         <Map></Map>
-        <Section></Section>
+        <Volunteer></Volunteer>
+        <Lead></Lead>
+        <Join></Join>
     </>
 }
 
@@ -35,9 +37,9 @@ function Header(){
                 There are three different positions and roles to explore!</p>
         </div>
         <div className="right">
-            <Method icon={faHeart} link="#Volunteer">Volunteer</Method>
-            <Method icon={faStar} link="#Leader">Club Leader</Method>
-            <Method icon={faPerson} link="#Member">Team Member</Method>
+            <Method icon={faHeart} link="#volunteer">Become a Volunteer</Method>
+            <Method icon={faStar} link="#lead">Become a Club Leader</Method>
+            <Method icon={faPerson} link="#join">Become a Team Member</Method>
         </div>
     </div>
 }
@@ -233,5 +235,76 @@ function Map({}){
             }
         </svg>
         <div id="map-club-name" className={clubName == null ? 'invisible' : 'visible'} style={{left: clubLocation.x, top: clubLocation.y}}>{clubName}</div>
+    </Section>
+}
+
+function Volunteer(){
+    return <Section section_id="volunteer" section_content_id="volunteer-content" title="Volunteer">
+        <div className="left">
+            <p>
+                <b>Support</b> local STEM clubs and help make STEM education accessible to elementary students. Volunteers assist Club Leaders with activities, work with small groups of students, and help create a fun, welcoming, and engaging learning environment.
+            </p>
+            <p><b>Responsibilities include:</b></p>
+            <ul>
+                <li>Assisting with STEM activities and experiments</li>
+                <li>Supporting small groups of students</li>
+                <li>Helping with setup and cleanup</li>
+                <li>Encouraging student participation and engagement</li>
+                <li>Working alongside Club Leaders during club sessions</li>
+            </ul>
+            <p><b>Time Commitment:</b> Approximately 1–2 hours per week during club sessions.</p>
+            <a href="TODO" target="_blank"><button className="small-button">Sign Up Here <FontAwesomeIcon icon={faArrowRight} /></button></a>
+        </div>
+        <div className="right">
+            <img src="app/assets/lander-mission.png" alt="Photograph of volunteers" />
+        </div>
+    </Section>
+}
+
+function Lead(){
+    return <Section section_id="lead" section_content_id="lead-content" title="Club Leader">
+        <div className="left">
+            <p>
+                <b>Create and lead</b> a local STEM4ALL club and inspire the next generation of STEM learners. Club Leaders work with elementary schools to facilitate hands-on STEM activities, coordinate volunteers, and create a fun, safe, and engaging learning environment for students. This role is ideal for students interested in teaching, leadership, and making a positive impact in their community.        </p>
+            <p><b>Responsibilities include:</b></p>
+            <ul>
+                <li>Teaching and facilitating weekly STEM club sessions</li>
+                <li>Coordinating volunteers and managing attendance</li>
+                <li>Preparing lesson materials and activities</li>
+                <li>Communicating with school staff and STEM4ALL</li>
+                <li>Submitting periodic club updates and reports</li>
+            </ul>
+            <p><b>Time Commitment:</b> Approximately 1–3 hours per week during club sessions.</p>
+            <a href="TODO" target="_blank"><button className="small-button">Apply Here <FontAwesomeIcon icon={faArrowRight} /></button></a>
+        </div>
+        <div className="right">
+            <img src="app/assets/involvement-lead.png" alt="Photograph of a club leader" />
+        </div>
+    </Section>
+}
+
+function Join(){
+    return <Section section_id="lead" section_content_id="lead-content" title="Join Us">
+        <div className="left">
+            <p>
+                Help grow and strengthen STEM4ALL beyond individual clubs. Team Members work behind the scenes to support expansion efforts, develop resources, recruit volunteers, and build partnerships that increase STEM access in communities.
+            </p>
+            <p><b>Potential areas of involvement include:</b></p>
+            <ul>
+                <li>Curriculum development</li>
+                <li>Marketing and social media</li>
+                <li>School outreach and partnerships</li>
+                <li>Volunteer recruitment and training</li>
+                <li>Website and technology</li>
+                <li>Operations and organizational planning</li>
+
+            </ul>
+            <p>This role is ideal for <b>students interested in leadership, education, community impact, and helping shape the future of STEM4ALL.</b></p>
+            <p><b>Time Commitment:</b> Approximately 1–3 hours per week during club sessions.</p>
+            <a href="TODO" target="_blank"><button className="small-button">Apply Here <FontAwesomeIcon icon={faArrowRight} /></button></a>
+        </div>
+        <div className="right">
+            <img src="app/assets/involvement-join.png" alt="Photograph of club members" />
+        </div>
     </Section>
 }
