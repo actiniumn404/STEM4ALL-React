@@ -1,0 +1,104 @@
+$header-background: whitesmoke;
+$goals-section-background: whitesmoke;
+$goal-background: var(--small-btn-color);
+$goal-icon-color: var(--small-btn-dark-color);
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $header-background;
+    gap: 30px;
+
+    .left{
+        h1{
+            font-weight: 900;
+            font-size: var(--font-size-header)
+        }
+        p {
+            font-size: var(--font-size-title);
+            line-height: 1.5;
+            span{
+                font-weight: bold;
+            }
+        }
+    }
+
+    .right{
+        img{
+            width: 600px;
+            border-radius: 10px;
+        }
+    }
+}
+
+#curriculum{
+    .two-image-side-by-side{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+
+        img{
+            width: 100%;
+            border-radius: 10px;
+            min-width: 200px;
+            max-width: 580px;
+        }
+    }
+}
+
+#goals{
+    background: $goals-section-background;
+
+    #goals-wrapper{
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+
+        .goal{
+            background: white;
+            padding: 30px 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+            text-align: center;
+
+            .goal-icon{
+                font-size: 80px;
+                background: $goal-background;
+                aspect-ratio: 1;
+                width: 180px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 100%;
+                color: $goal-icon-color;
+            }
+
+            .goal-number{
+                font-weight: 600;
+                font-size: var(--font-size-title);
+            }
+
+            .goal-text{
+                line-height: 1.5;
+            }
+        }
+    }
+}
+
+#photos {
+    #photos-wrapper {
+        display: flex;
+        gap: 20px;
+
+        .photo{
+            img{
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+    }
+}

@@ -22,8 +22,8 @@ export default function Navbar(){
             <div className="right">
                 {
                     Object.entries(nav_links).map(([caption, link]) => (
-                        <div className="nav-link-wrapper">
-                            <a key={caption} href={link} className="nav-link">{caption}</a>
+                        <div className="nav-link-wrapper" key={caption}>
+                            <a href={link} className="nav-link">{caption}</a>
                         </div>
                     ))
                 }

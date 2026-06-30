@@ -27,8 +27,8 @@ export default function Footer(){
 
 function FooterIcon({URL, icon}){
     return <>
-        <div className="footer-icon">
-            <a href={URL}>
+        <div className="small-button footer-icon">
+            <a href={URL} target="_blank">
                 <FontAwesomeIcon icon={icon}></FontAwesomeIcon>
             </a>
         </div>

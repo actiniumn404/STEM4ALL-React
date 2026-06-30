@@ -1,9 +1,12 @@
 :root{
     --nav-background: --navigation-color;
-    --nav-color: black;
+    --navigation-color: black;
     --text-color-primary: black;
     --font-size-primary: 18px;
     --font-size-title: 22px;
     --font-size-header: 32px;
-    --small-btn-color: #E9F5D6;
+    --small-btn-color: #ecfccb;
+    --small-btn-highlight-color: #d9f99d;
+    --small-btn-active-color: #bef264;
+    --small-btn-dark-color: #84cc16;
 }
