@@ -1,8 +1,8 @@
-$header-background: whitesmoke;
-$involvement-method-background: white;
-$involvement-method-hover-background: #d9f99d;
+$header-background: var(--theme-yellow);
+$involvement-method-background: var(--theme-light-yellow);
+$involvement-method-hover-background: white;
 $involvement-method-hover-text: black;
-$involvement-method-active-background: #bef264;
+$involvement-method-active-background: whitesmoke;
 $involvement-method-active-text: black;
 $map-color: rgb(228, 247, 174);
 $pin-color: #fb889f;
@@ -13,21 +13,26 @@ html {
     scroll-behavior: smooth;
 }
 
+:root{
+    --nav-background: var(--theme-yellow);
+}
+
 #header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: $header-background;
     gap: 30px;
+    padding: 80px var(--padding);
 
     .left{
         h1{
             font-weight: 900;
-            font-size: var(--font-size-header)
+            font-size: var(--font-size-hero)
         }
         p {
             font-size: var(--font-size-title);
-            line-height: 1.5;
+            line-height: 1.7;
             span{
                 font-weight: bold;
             }
@@ -54,7 +59,7 @@ html {
         background: $involvement-method-background;
         padding: 20px;
         border-radius: 4px;
-        width: 400px;
+        width: 500px;
         text-align: left;
         border: none;
         display: flex;
@@ -63,7 +68,7 @@ html {
         color: var(--text-color-primary);
         cursor: pointer;
 
-        transition: 0.2s;
+        transition: 0.2s background;
 
         &:hover{
             background: $involvement-method-hover-background;
@@ -130,6 +135,38 @@ html {
             margin-left: 30px;
             border-radius: 4px;
             float: right;
+        }
+    }
+}
+
+@media (max-width: 1100px){
+    #header{
+        .left{
+            min-width: 540px;
+            max-width: 540px;
+        }
+        .right{
+            flex: 1;
+        }
+
+        .involvement-method{
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 900px){
+    #header{
+        flex-wrap: wrap;
+
+        .left{
+            width: 100%;
+            min-width: 0;
+            max-width: none;
+        }
+
+        .involvement-method{
+            width: var(--width);
         }
     }
 }

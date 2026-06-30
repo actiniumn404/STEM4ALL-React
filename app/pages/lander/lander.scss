@@ -4,9 +4,9 @@
     --hero-background: url('app/assets/lander-hero.png');
 }
 
-$figures-background: pink;
+$figures-background: whitesmoke;
 $hero-text-color: white;
-$faq-background: #fffbeb;
+$faq-background: whitesmoke;
 
 .hero{
     padding: 250px var(--padding);
@@ -61,6 +61,7 @@ nav{
 
             .figures-figure-icon{
                 font-size: 60px;
+                color: var(--small-btn-dark-color);
             }
         }
     }
