@@ -4,6 +4,10 @@ $involvement-method-hover-background: #d9f99d;
 $involvement-method-hover-text: black;
 $involvement-method-active-background: #bef264;
 $involvement-method-active-text: black;
+$map-color: rgb(228, 247, 174);
+$pin-color: #fb889f;
+$club-name-background: lightcoral;
+$club-name-text: white;
 
 #header{
     display: flex;
@@ -69,6 +73,43 @@ $involvement-method-active-text: black;
 
         .fa{
             font-size: var(--font-size-header);
+        }
+    }
+}
+
+#map-section{
+    #map-wrapper{
+        #map{
+            width: 100%;
+            fill: $map-color;
+            g > path{
+                fill: $map-color;
+                &:hover{
+                    fill: color-mix(in oklab, $map-color, black 5%);
+                }
+            }
+            .pin{
+                fill: $pin-color;
+                cursor: pointer;
+
+                &:hover{
+                    fill: color-mix(in oklab, $pin-color, black 15%);
+                }
+            }
+        }
+
+        #map-club-name{
+            position: absolute;
+            transform: translate(-20px, -35px);
+            background: $club-name-background;
+            padding: 5px 10px;
+            color: $club-name-text;
+            font-weight: bold;
+            border-radius: 4px;
+
+            &.invisible{
+                display: none;
+            }
         }
     }
 }
