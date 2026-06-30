@@ -1,0 +1,27 @@
+:root{
+    --nav-background: transparent;
+    --navigation-color: whitesmoke;
+    --hero-background: url('app/assets/lander-hero.png');
+}
+
+.hero{
+    padding: 250px var(--padding);
+    background: var(--hero-background);
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.hero-text{
+    font-size: 48px;
+}
+
+#mission{
+    line-height: 1.5;
+}
+
+nav{
+    position: absolute;
+    width: 100%;
+}

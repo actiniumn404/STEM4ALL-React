@@ -1,0 +1,57 @@
+/*
+ * Contains everything that every page should have in terms of styles
+ * Base styles
+ * Navigation
+ */
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+:root{
+    --width: min(1100px, calc(100vw - 30px));
+    --padding: calc(50vw - var(--width) / 2);
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    font-size: var(--font-size-primary);
+}
+
+.section{
+    padding: 50px var(--padding);
+}
+
+
+/* ===== REUSABLE CLASSES =====*/
+
+.small-button{
+    background: var(--small-btn-color);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: inherit;
+    cursor: pointer;
+    transition: opacity 0.2s;
+
+    &:hover{
+        opacity: 0.8;
+    }
+
+    &:active{
+        opacity: 0.5;
+    }
+}
+
+
+.text-image-side-by-side{
+    display: flex;
+    gap: 10px;
+
+    .right{
+        img{
+            width: 100%;
+        }
+    }
+}
