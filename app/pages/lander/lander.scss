@@ -4,13 +4,32 @@
     --hero-background: url('app/assets/lander-hero.png');
 }
 
+$figures-background: pink;
+$hero-text-color: white;
+$faq-background: #fffbeb;
+
 .hero{
     padding: 250px var(--padding);
-    background: var(--hero-background);
     text-align: center;
-    background-size: cover;
-    background-position: center;
+    background: rgba(0, 0, 0, 0.8);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 100%);
+    height: 700px;
+    color: $hero-text-color;
 
+
+    &::before{
+        content: " ";
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        background: var(--hero-background);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: inherit;
+        z-index: -1;
+    }
 }
 
 .hero-text{
@@ -24,4 +43,90 @@
 nav{
     position: absolute;
     width: 100%;
+}
+
+#figures_section{
+    background: $figures-background;
+
+    #figures_wrapper{
+        display: flex;
+        justify-content: space-between;
+
+        .figures-figure{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            text-align: center;
+
+            .figures-figure-icon{
+                font-size: 60px;
+            }
+        }
+    }
+}
+
+#involvement-section{
+    #involvement-wrapper{
+        display: flex;
+        gap: 25px;
+
+        .involvement-card{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .involvement-icon{
+                display: block;
+                width: 100%;
+                height: 400px;
+                background-size: cover;
+                border-radius: 5px;
+            }
+
+            .involvement-title{
+                font-size: var(--font-size-title);
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+
+            .involvement-caption{
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+#faq-section{
+    background: $faq-background;
+
+    #faq-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .faq-question-wrapper{
+
+            .faq-question{
+                display: flex;
+                justify-content: space-between;
+                padding: 20px 0;
+                cursor: pointer;
+                border-bottom: 2px solid black;
+                font-weight: bold;
+            }
+
+            .faq-response{
+                padding: 20px 15px;
+
+                &.open{
+                    display: block;
+                }
+                &.closed{
+                    display: none;
+                }
+            }
+        }
+    }
 }

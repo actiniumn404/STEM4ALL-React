@@ -31,13 +31,6 @@ export default function Navbar(){
                 <div className="nav-contact-button">
                     Contact Us
                 </div>
-
-                <div className="nav-contact">
-                    <a href=""><i className="fa-brands fa-instagram"></i></a>
-                </div>
-                <div className="nav-contact">
-                    <a href=""><i className="fa-brands fa-square-linkedin"></i></a>
-                </div>
             </div>
 
 
