@@ -4,6 +4,7 @@ import Section from "~/components/section/section";
 import {faArrowRight, faHeart, faPerson, faStar} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {useState} from "react";
+import Footer from "~/components/footer/footer";
 
 const locations = [
     {
@@ -26,6 +27,7 @@ export default function Involvement(){
         <Volunteer></Volunteer>
         <Lead></Lead>
         <Join></Join>
+        <Footer></Footer>
     </>
 }
 
@@ -284,7 +286,7 @@ function Lead(){
 }
 
 function Join(){
-    return <Section section_id="lead" section_content_id="lead-content" title="Join Us">
+    return <Section section_id="join" section_content_id="lead-content" title="Join Us">
         <div className="left">
             <p>
                 Help grow and strengthen STEM4ALL beyond individual clubs. Team Members work behind the scenes to support expansion efforts, develop resources, recruit volunteers, and build partnerships that increase STEM access in communities.
