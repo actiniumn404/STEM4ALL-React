@@ -63,3 +63,18 @@ body{
         }
     }
 }
+
+.fade {
+    opacity: 0.6;
+    transform: translateY(2vh);
+    visibility: hidden;
+    transition: opacity 1200ms ease-out, transform 600ms ease-out,
+    visibility 1200ms ease-out;
+    will-change: opacity, transform, visibility;
+}
+
+.fade.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+}
