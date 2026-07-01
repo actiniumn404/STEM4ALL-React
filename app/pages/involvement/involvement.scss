@@ -4,10 +4,14 @@ $involvement-method-hover-background: white;
 $involvement-method-hover-text: black;
 $involvement-method-active-background: whitesmoke;
 $involvement-method-active-text: black;
-$map-color: rgb(228, 247, 174);
-$pin-color: #fb889f;
-$club-name-background: lightcoral;
+$map-color: var(--theme-light-yellow);
+$pin-color: var(--theme-emerald);
+$club-name-background: var(--theme-emerald);
 $club-name-text: white;
+
+$volunteer-background: whitesmoke;
+$lead-background: white;
+$join-background: whitesmoke;
 
 html {
     scroll-behavior: smooth;
@@ -124,19 +128,46 @@ html {
 }
 
 #volunteer, #lead, #join{
-    line-height: 1.5;
+    line-height: 1.7;
+
+    p:first-of-type{
+        margin-top: 0;
+    }
+
+    .section-header-text{
+        margin-bottom: 20px;
+    }
 
     .section-content{
         display: flex;
         gap: 30px;
         img{
             width: min(var(--width), 500px);
-            margin-top: 1em;
             margin-left: 30px;
             border-radius: 4px;
             float: right;
         }
     }
+
+    h2{
+        font-size: var(--font-size-title);
+    }
+
+    ::marker{
+        color: var(--theme-emerald);
+    }
+}
+
+#volunteer{
+    background: $volunteer-background;
+}
+
+#lead{
+    background: $lead-background
+}
+
+#join{
+    background: $join-background;
 }
 
 @media (max-width: 1100px){

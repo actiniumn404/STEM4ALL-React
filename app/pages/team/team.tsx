@@ -1,6 +1,15 @@
 import "./team.scss"
 import Section from "~/components/section/section";
 import Navbar from "~/components/navbar/navbar";
+import {DESCRIPTION} from "~/components/constants";
+
+import type {Route} from "./+types/home";
+export function meta({}: Route.MetaArgs) {
+    return [
+        {title: "Meet the Team - STEM4ALL"},
+        {name: "description", content: DESCRIPTION},
+    ];
+}
 
 export default function Team(){
     return <>

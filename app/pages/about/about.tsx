@@ -4,6 +4,16 @@ import {faBook, faLightbulb, faPeopleGroup} from "@fortawesome/free-solid-svg-ic
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import Footer from "~/components/footer/footer";
 import Section from "~/components/section/section";
+import {DESCRIPTION} from "~/components/constants";
+
+import type {Route} from "./+types/home";
+export function meta({}: Route.MetaArgs) {
+    return [
+        {title: "About - STEM4ALL"},
+        {name: "description", content: DESCRIPTION},
+    ];
+}
+
 
 export default function About(){
     return <>
@@ -23,7 +33,7 @@ function Header(){
             <p>We are an official <span>501c(3)</span> nonprofit based in the Puget Sound area of Washington, US. Starting as just a local STEM Club, we are striving to expand our growth and impact, inspiring young kids across all communities to find interest and joy in STEM!</p>
         </div>
         <div className="right">
-            <img src="/app/assets/about-hero.png" alt="Photograph from a STEM 4 All Club" />
+            <img src="/app/assets/about-hero.png" alt="Photograph from a STEM4ALL Club" />
         </div>
     </div>
 }
@@ -66,5 +76,5 @@ function Photos(){
 }
 
 function Photo({URL}){
-    return <div className="photo"><img src={URL} alt="Photo of a STEM 4 All club"/></div>
+    return <div className="photo"><img src={URL} alt="Photo of a STEM4ALL club"/></div>
 }

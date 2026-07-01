@@ -14,11 +14,12 @@ import {
 import Footer from "~/components/footer/footer";
 import {useState} from "react";
 import Section from "~/components/section/section";
+import {DESCRIPTION} from "~/components/constants";
 
 export function meta({}: Route.MetaArgs) {
     return [
-        {title: "STEM 4 All"},
-        {name: "description", content: "TODO: Change this later"},
+        {title: "Home - STEM4ALL"},
+        {name: "description", content: DESCRIPTION},
     ];
 }
 
@@ -55,7 +56,7 @@ function Mission(){
                 empowering student leaders to teach and inspire their communities.
             </div>
             <div className="right">
-                <img src="/app/assets/lander-mission.png" alt="Photograph from one of STEM 4 All's clubs"/>
+                <img src="/app/assets/lander-mission.png" alt="Photograph from one of STEM4ALL's clubs"/>
             </div>
         </div>
     </Section>
