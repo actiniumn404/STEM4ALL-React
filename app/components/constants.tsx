@@ -1,4 +1,6 @@
 export const INSTAGRAM = "https://instagram.com/"
+export const INSTAGRAM_NAME = "@reallcoolaccount"
 export const LINKEDIN = "https://linkedin.com/"
+export const LINKEDIN_NAME = "reallycoollinkedin"
 export const EMAIL = "stem4allorg@gmail.com"
 export const DESCRIPTION = "We are a nonprofit that strives to inspire young kids across all communities to find interest and joy in STEM!"

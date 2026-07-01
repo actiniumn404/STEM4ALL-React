@@ -1,0 +1,101 @@
+$header-background: var(--theme-dark-blue);
+$header-title-color: white;
+$header-description-color: white;
+$header-button-background: #ffe4e6;
+$method-background: white;
+$method-color: black;
+
+:root{
+    --nav-background: var(--theme-dark-blue);
+    --navigation-color: white;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $header-background;
+    gap: 30px;
+
+    .left{
+        h1{
+            font-weight: 900;
+            font-size: var(--font-size-hero);
+            color: $header-title-color;
+            letter-spacing: 1px;
+            margin: 0;
+        }
+        p {
+            font-size: var(--font-size-title);
+            color: $header-description-color;
+            line-height: 1.7;
+            margin: 20px 0;
+            font-weight: 400;
+            span{
+                font-weight: bold;
+            }
+        }
+    }
+
+    .method-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .method-link{
+            color: $method-color;
+            text-decoration: none;
+
+            .method{
+                background: $method-background;
+                padding: 20px;
+                font-size: var(--font-size-title);
+                .method-text{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
+                border-radius: 10px;
+                width: 600px;
+                transition: 0.2s background, 0.2s opacity;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .fa{
+                    font-size: 50px;
+                    color: $header-background;
+                }
+
+                &:hover{
+                    background: var(--theme-yellow);
+                }
+
+                &:active{
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}
+
+#form-section{
+    #form{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 950px){
+    #header{
+        flex-wrap: wrap;
+
+        .method-wrapper{
+            width: 100%;
+
+            .method-link .method{
+                width: 100%;
+            }
+        }
+    }
+}

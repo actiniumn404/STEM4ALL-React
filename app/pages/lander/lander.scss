@@ -43,6 +43,10 @@ $faq-background: whitesmoke;
 nav{
     position: absolute;
     width: 100%;
+
+    .nav-contact-button:hover{
+        color: black;
+    }
 }
 
 #figures_section{

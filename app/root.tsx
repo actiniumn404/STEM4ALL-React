@@ -13,6 +13,8 @@ import "./styles/base.scss";
 import "./styles/config.scss"
 
 import '@fortawesome/fontawesome-svg-core/styles.css';
+import NotFound from "~/pages/404/404";
+
 import { config } from '@fortawesome/fontawesome-svg-core';
 config.autoAddCss = false;
 
@@ -74,15 +76,5 @@ export function ErrorBoundary({error}: Route.ErrorBoundaryProps) {
         stack = error.stack;
     }
 
-    return (
-        <main className="pt-16 p-4 container mx-auto">
-            <h1>{message}</h1>
-            <p>{details}</p>
-            {stack && (
-                <pre className="w-full p-4 overflow-x-auto">
-          <code>{stack}</code>
-        </pre>
-            )}
-        </main>
-    );
+    return <NotFound message={message} details={details} stack={stack}></NotFound>
 }

@@ -1,9 +1,10 @@
 :root{
-    --nav-background: --navigation-color;
+    --nav-background: white;
     --navigation-color: black;
 
     --footer-background: var(--theme-emerald);
     --footer-color: white;
+    --footer-height: 144px;
 
     --text-color-primary: black;
     --font-size-primary: 18px;
@@ -26,4 +27,5 @@
     --theme-yellow: #fcd34d;
     --theme-light-yellow: #fef3c7;
     --theme-pink: #fda4af;
+    --theme-dark-blue: #1e293b;
 }

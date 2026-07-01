@@ -28,9 +28,9 @@ export default function Navbar(){
                     ))
                 }
 
-                <div className="nav-contact-button">
+                <a href="contact"><div className="nav-contact-button">
                     Contact Us
-                </div>
+                </div></a>
             </div>
 
 

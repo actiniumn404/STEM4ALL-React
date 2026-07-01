@@ -9,6 +9,11 @@ nav{
     padding: 10px var(--padding);
     background: var(--nav-background);
     color: var(--navigation-color);
+
+    a{
+        color: var(--navigation-color);
+        text-decoration: none;
+    }
 }
 
 nav .right{
@@ -59,4 +64,11 @@ nav .left .nav-logo-wrapper{
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
+    transition: 0.2s background, 0.2s color;
+    font-weight: 600;
+}
+
+.nav-contact-button:hover{
+    background: var(--navigation-color);
+    color: var(--nav-background);
 }
