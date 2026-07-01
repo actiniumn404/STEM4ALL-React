@@ -32,7 +32,7 @@ function Header(){
         </div>
         <div className="right">
             <div className="header-logo">
-                <img src="./app/assets/logo.png" alt="STEM4ALL Logo" />
+                <img src="/assets/logo.png" alt="STEM4ALL Logo" />
             </div>
         </div>
     </div>

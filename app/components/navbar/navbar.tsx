@@ -14,7 +14,7 @@ export default function Navbar(){
             <div className="left">
                 <div className="nav-logo-wrapper">
                     <a className="nav-link" href="/">
-                        <img src="/app/assets/logo.png"  alt="Stem4All Logo" className="nav-logo" />
+                        <img src="/assets/logo.png"  alt="Stem4All Logo" className="nav-logo" />
                     </a>
                 </div>
             </div>

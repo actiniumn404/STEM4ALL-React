@@ -10,7 +10,7 @@ export default function Footer(){
             <div className="left">
                 <div className="logo">
                     <div className="logo-image">
-                        <img src="app/assets/logo-white.png" alt="STEM4ALL Logo" />
+                        <img src="/assets/logo-white.png" alt="STEM4ALL Logo" />
                     </div>
                     <div className="logo-text">
                         <div className="logo-title">STEM 4 ALL</div>

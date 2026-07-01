@@ -57,7 +57,7 @@ function Mission(){
                 empowering student leaders to teach and inspire their communities.
             </div>
             <div className="right">
-                <img src="/app/assets/lander-mission.png" alt="Photograph from one of STEM4ALL's clubs"/>
+                <img src="/assets/lander-mission.png" alt="Photograph from one of STEM4ALL's clubs"/>
             </div>
         </div>
     </Section>
@@ -101,19 +101,19 @@ function Figures(){
 
 function Involvement(){
     return <Section section_id="involvement-section" section_content_id="involvement-wrapper" title="Get Involved">
-        <InvolvementMethod imageURL="app/assets/lander-kids-1.png"
+        <InvolvementMethod imageURL="/assets/lander-kids-1.png"
                            title="Volunteer with us!"
                            caption="Earn hours while helping teach and run local STEM Clubs!"
                            link="get-involved#volunteer"
         ></InvolvementMethod>
 
-        <InvolvementMethod imageURL="app/assets/lander-kids-2.png"
+        <InvolvementMethod imageURL="/assets/lander-kids-2.png"
                            title="Start a STEM Club!"
                            caption="Create a local STEM Club, gaining leadership and teaching students! "
                            link="get-involved#lead"
         ></InvolvementMethod>
 
-        <InvolvementMethod imageURL="app/assets/lander-kids-3.png"
+        <InvolvementMethod imageURL="/assets/lander-kids-3.png"
                            title="Join our team!"
                            caption="Expand and manage STEM Clubs, develop curriculum, and more!"
                            link="get-involved#join"

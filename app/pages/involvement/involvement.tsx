@@ -85,7 +85,7 @@ function Map({}){
         setClubName(null)
     }
 
-    return <Section section_id="map-section" section_content_id="map-wrapper" title="STEM4ALL Club Locations">
+    return <Section section_id="map-section" section_content_id="map-wrapper" title="STEM4ALL Club Locations" fadein={false}>
         <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" data-name="Layer 1"
              preserveAspectRatio="xMidYMid meet" version="1.0" viewBox="-0.0 0.0 1415.6 785.9" zoomAndPan="magnify"
              width="1371.2343068583762px" id="map">
@@ -254,7 +254,7 @@ function Volunteer(){
             <p>
                 <b>Support</b> local STEM clubs and help make STEM education accessible to elementary students. Volunteers assist Club Leaders with activities, work with small groups of students, and help create a fun, welcoming, and engaging learning environment.
             </p>
-            <img src="app/assets/lander-mission.png" alt="Photograph of volunteers" />
+            <img src="/assets/lander-mission.png" alt="Photograph of volunteers" />
             <h2>Responsibilities include:</h2>
             <ul>
                 <li>Assisting with STEM activities and experiments</li>
@@ -276,7 +276,7 @@ function Lead(){
     return <Section section_id="lead" section_content_id="lead-content" title="Club Leader">
         <div className="left">
             <p><b>Create and lead</b> a local STEM4ALL club and inspire the next generation of STEM learners. Club Leaders work with elementary schools to facilitate hands-on STEM activities, coordinate volunteers, and create a fun, safe, and engaging learning environment for students. This role is ideal for students interested in teaching, leadership, and making a positive impact in their community.        </p>
-            <img src="app/assets/involvement-lead.png" alt="Photograph of a club leader" />
+            <img src="/assets/involvement-lead.png" alt="Photograph of a club leader" />
             <h2>Responsibilities include:</h2>
             <ul>
                 <li>Teaching and facilitating weekly STEM club sessions</li>
@@ -300,7 +300,7 @@ function Join(){
             <p>
                 Help grow and strengthen STEM4ALL beyond individual clubs. Team Members work behind the scenes to support expansion efforts, develop resources, recruit volunteers, and build partnerships that increase STEM access in communities.
             </p>
-            <img src="app/assets/involvement-join.png" alt="Photograph of club members" />
+            <img src="/assets/involvement-join.png" alt="Photograph of club members" />
             <h2>Potential areas of involvement include:</h2>
             <ul>
                 <li>Curriculum development</li>
