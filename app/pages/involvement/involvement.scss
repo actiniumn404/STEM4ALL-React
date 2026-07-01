@@ -201,3 +201,10 @@ html {
         }
     }
 }
+
+@media (max-width: 850px){
+    .section-content img{
+        float: none !important;
+        width: 100% !important;
+    }
+}

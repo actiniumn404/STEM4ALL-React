@@ -195,3 +195,20 @@ nav{
 
     }
 }
+
+@media (max-width: 650px){
+    #figures_section #figures_wrapper{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #figures_section #figures_wrapper .figures-figure{
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 600px){
+    nav .right{
+        background: black;
+    }
+}

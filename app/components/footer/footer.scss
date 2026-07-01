@@ -4,6 +4,7 @@ footer{
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
 
     background: var(--footer-background);
     color: var(--footer-color);
@@ -79,4 +80,17 @@ footer{
         }
     }
 
+}
+
+@media (max-width: 740px){
+    footer{
+        flex-direction: column;
+        align-items: flex-start;
+        .right{
+            flex-wrap: wrap;
+        }
+        .logo{
+            flex-wrap: wrap;
+        }
+    }
 }

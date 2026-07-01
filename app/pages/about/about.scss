@@ -161,4 +161,11 @@ $header-description-color: #f9fafb;
             }
         }
     }
+
+    #photos-wrapper{
+        flex-wrap: wrap;
+    }
+
+    .photo img{
+    }
 }

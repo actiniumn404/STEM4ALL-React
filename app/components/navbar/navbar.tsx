@@ -1,4 +1,6 @@
 import "./navbar.scss"
+import {faBars, faHamburger} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 const nav_links = {
     "About Us": "/about",
@@ -18,6 +20,8 @@ export default function Navbar(){
                     </a>
                 </div>
             </div>
+
+            <FontAwesomeIcon icon={faBars} id="hamburger"/>
 
             <div className="right">
                 {

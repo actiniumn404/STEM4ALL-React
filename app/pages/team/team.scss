@@ -88,3 +88,13 @@ $header-button-background: #ffe4e6;
         }
     }
 }
+
+@media (max-width: 750px){
+    #header{
+        flex-direction: column-reverse;
+    }
+
+    img{
+        max-width: 100%;
+    }
+}
