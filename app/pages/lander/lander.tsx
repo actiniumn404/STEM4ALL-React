@@ -42,7 +42,7 @@ export default function Lander() {
 
 function Hero(){
     return <div className="hero">
-        <h1 className="hero-text">Making STEM Accessible For <span className="hero-text-highlight">All</span></h1>
+        <h1 className="hero-text">Making STEM Accessible <span className="hero-text-highlight">For All</span></h1>
         <p className="hero-description">We make STEM accessible through low-cost, hands-on learning experiences for elementary students
             while empowering student leaders to teach and inspire their communities.</p>
     </div>
@@ -104,19 +104,19 @@ function Involvement(){
         <InvolvementMethod imageURL="app/assets/lander-kids-1.png"
                            title="Volunteer with us!"
                            caption="Earn hours while helping teach and run local STEM Clubs!"
-                           link="TODO"
+                           link="get-involved#volunteer"
         ></InvolvementMethod>
 
         <InvolvementMethod imageURL="app/assets/lander-kids-2.png"
                            title="Start a STEM Club!"
                            caption="Create a local STEM Club, gaining leadership and teaching students! "
-                           link="TODO"
+                           link="get-involved#lead"
         ></InvolvementMethod>
 
         <InvolvementMethod imageURL="app/assets/lander-kids-3.png"
                            title="Join our team!"
                            caption="Expand and manage STEM Clubs, develop curriculum, and more!"
-                           link="TODO"
+                           link="get-involved#join"
         ></InvolvementMethod>
     </Section>
 }
