@@ -1,22 +1,34 @@
 import "./footer.scss"
-import {INSTAGRAM, LINKEDIN} from "~/components/constants";
+import {EMAIL, INSTAGRAM, LINKEDIN} from "~/components/constants";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faInstagram, faLinkedin, faLinkedinIn} from "@fortawesome/free-brands-svg-icons";
+import {faUpRightFromSquare} from "@fortawesome/free-solid-svg-icons";
 
 export default function Footer(){
     return <>
         <footer>
             <div className="left">
-                Copyright &copy; 2026 STEM for All
+                <div className="logo">
+                    <div className="logo-image">
+                        <img src="app/assets/logo-white.png" alt="STEM4ALL Logo" />
+                    </div>
+                    <div className="logo-text">
+                        <div className="logo-title">STEM 4 ALL</div>
+                        <div className="logo-description">Making STEM Accessible For All</div>
+                    </div>
+                </div>
             </div>
 
             <div className="right">
-                <div className="footer-email">
-                    stem4allorg@gmail.com
-                </div>
-                <div className="footer-contact small-button">
+                <a href="contact"><div className="footer-contact">
                     Contact Us
-                </div>
+                </div></a>
+
+                <a href={"mailto:"+EMAIL} target="_blank">
+                    <div className="footer-email">
+                    {EMAIL} <FontAwesomeIcon icon={faUpRightFromSquare}/>
+                    </div>
+                </a>
 
                 <FooterIcon URL={INSTAGRAM} icon={faInstagram}></FooterIcon>
                 <FooterIcon URL={LINKEDIN} icon={faLinkedinIn}></FooterIcon>

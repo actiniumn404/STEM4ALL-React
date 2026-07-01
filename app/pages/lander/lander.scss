@@ -61,39 +61,62 @@ nav{
 
             .figures-figure-icon{
                 font-size: 60px;
-                color: var(--small-btn-dark-color);
+                color: var(--theme-emerald);
             }
         }
     }
 }
 
 #involvement-section{
+    .section-header-text{
+        margin-bottom: 40px;
+    }
+
     #involvement-wrapper{
         display: flex;
-        gap: 25px;
+        flex-direction: column;
+        gap: 40px;
 
         .involvement-card{
             flex: 1;
             display: flex;
-            flex-direction: column;
-            gap: 10px;
+            flex-direction: row;
+            gap: 60px;
+            align-items: center;
 
-            .involvement-icon{
-                display: block;
-                width: 100%;
-                height: 400px;
-                background-size: cover;
-                border-radius: 5px;
+            .involvement-icon-wrapper{
+                flex-basis: calc(50% - 20px);
+                .involvement-icon{
+                    display: block;
+                    width: 100%;
+                    height: 300px;
+                    background-size: cover;
+                    background-position: center;
+                    border-radius: 10px;
+                }
+            }
+
+
+            .involvement-text{
+                flex-basis: calc(50% - 30px);
+                padding: 30px 0;
+                margin-right: auto;
+                width: 50%;
             }
 
             .involvement-title{
-                font-size: var(--font-size-title);
+                font-size: var(--font-size-large);
                 font-weight: 600;
                 margin-bottom: 20px;
             }
 
             .involvement-caption{
                 margin-bottom: 20px;
+                line-height: 1.5;
+            }
+
+            &:nth-child(2){
+                flex-direction: row-reverse;
             }
         }
     }
@@ -129,5 +152,29 @@ nav{
                 }
             }
         }
+    }
+}
+
+@media (max-width: 900px){
+    #involvement-section{
+        #involvement-wrapper{
+            .involvement-card{
+                gap: 10px !important;
+                flex-direction: column !important;
+
+                .involvement-text{
+                    flex-basis: 100%;
+                    width: 100%;
+                }
+
+                .involvement-icon-wrapper {
+                    width: 100%;
+                    .involvement-icon{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
     }
 }

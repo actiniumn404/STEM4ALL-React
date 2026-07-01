@@ -29,7 +29,6 @@ export default function Lander() {
 
         <Hero></Hero>
 
-        <Mission></Mission>
 
         <Figures></Figures>
 
@@ -44,6 +43,8 @@ export default function Lander() {
 function Hero(){
     return <div className="hero">
         <h1 className="hero-text">Making STEM Accessible For <span className="hero-text-highlight">All</span></h1>
+        <p className="hero-description">We make STEM accessible through low-cost, hands-on learning experiences for elementary students
+            while empowering student leaders to teach and inspire their communities.</p>
     </div>
 }
 
@@ -74,13 +75,15 @@ function Figure({icon, caption}){
 function InvolvementMethod({imageURL, title, caption, link}){
     return <>
         <div className="involvement-card">
-            <div className="involvement-icon" style={{backgroundImage:`url(${imageURL})`}}></div>
+            <div className="involvement-icon-wrapper">
+                <div className="involvement-icon" style={{backgroundImage:`url(${imageURL})`}}></div>
+            </div>
 
             <div className="involvement-text">
                 <div className="involvement-title">{title}</div>
                 <div className="involvement-caption">{caption}</div>
                 <a href={link}>
-                    <button className="small-button">Learn More <FontAwesomeIcon icon={faArrowRight} /></button>
+                    <button className="text-button">Learn More <FontAwesomeIcon icon={faArrowRight} /></button>
                 </a>
             </div>
         </div>

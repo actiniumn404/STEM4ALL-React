@@ -24,12 +24,14 @@ body{
 
 .small-button{
     background: var(--small-btn-color);
+    color: var(--small-btn-text-color);
     border: none;
-    padding: 10px 15px;
+    padding: 15px 20px;
     border-radius: 5px;
     font-size: inherit;
     cursor: pointer;
     transition: background 0.2s;
+    font-weight: bold;
 
     &:hover{
         background: var(--small-btn-highlight-color)
@@ -38,6 +40,16 @@ body{
     &:active{
         background: var(--small-btn-active-color)
     }
+}
+
+.text-button{
+    color: var(--small-btn-color);
+    font-size: inherit;
+    background: none;
+    border: none;
+    padding: 0;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 

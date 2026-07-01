@@ -8,15 +8,22 @@
     --text-color-primary: black;
     --font-size-primary: 18px;
     --font-size-title: 22px;
+    --font-size-large: 28px;
     --font-size-header: 32px;
     --font-size-hero: 40px;
 
-    --small-btn-color: #ecfccb;
-    --small-btn-highlight-color: #d9f99d;
-    --small-btn-active-color: #bef264;
-    --small-btn-dark-color: #4d7c0f;
+    --small-btn-color: var(--theme-emerald);
+    --small-btn-text-color: white;
+    --small-btn-highlight-color: #10b981;
+    --small-btn-active-color: #34d399;
+    --small-btn-dark-color: #065f46;
+
+    --footer-button-background: white;
+    --footer-button-hover-background: var(--theme-yellow);
+    --footer-button-color: black;
 
     --theme-emerald: #059669;
     --theme-yellow: #fcd34d;
     --theme-light-yellow: #fef3c7;
+    --theme-pink: #fda4af;
 }

@@ -136,6 +136,16 @@ $header-description-color: #f9fafb;
     }
 }
 
+@media (max-width: 900px){
+    #goals-wrapper{
+        flex-wrap: wrap;
+    }
+
+    .goal{
+        width: 100%;
+    }
+}
+
 @media(max-width: 700px){
     #header{
         flex-wrap: wrap;

@@ -12,11 +12,11 @@ footer{
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 10px;
+        gap: 15px;
     }
 
     .footer-icon{
-        background: var(--small-btn-color);
+        background: var(--footer-button-background);
         height: 40px;
         aspect-ratio: 1;
         display: flex;
@@ -25,8 +25,58 @@ footer{
         font-size: 24px;
         padding: 0;
         a{
-            color: var(--footer-color);
+            color: var(--footer-button-color);
         }
         border-radius: 100%;
+
+        &:hover{
+            background: var(--footer-button-hover-background);
+        }
     }
+
+    .footer-email{
+        background: var(--footer-button-background);
+        height: 40px;
+        padding: 10px;
+        color: var(--footer-button-color);
+        display: flex;
+        align-items: center;
+        gap: 0.25em;
+        border-radius: 20px;
+        cursor: pointer;
+        &:hover{
+            background: var(--footer-button-hover-background);
+        }
+    }
+
+    .logo{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .logo-image{
+            width: 120px;
+            img{
+                width: 100%;
+            }
+        }
+
+        .logo-title{
+            font-weight: 900;
+            font-size: 32px;
+        }
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .footer-contact{
+        color: var(--footer-color);
+        font-weight: bold;
+
+        &:hover{
+            color: var(--theme-yellow);
+        }
+    }
+
 }

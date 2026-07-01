@@ -1,5 +1,90 @@
-$header-background: whitesmoke;
+$header-background: var(--theme-pink);
+$header-title-color: black;
+$header-description-color: black;
+$header-button-background: #ffe4e6;
+
+:root{
+    --nav-background: var(--theme-pink);
+}
 
 #header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background: $header-background;
+    gap: 30px;
+
+    .left{
+        h1{
+            font-weight: 900;
+            font-size: var(--font-size-hero);
+            color: $header-title-color;
+            letter-spacing: 1px;
+            margin: 0;
+        }
+        p {
+            font-size: var(--font-size-title);
+            color: $header-description-color;
+            line-height: 1.7;
+            margin: 20px 0;
+            font-weight: 400;
+            span{
+                font-weight: bold;
+            }
+        }
+    }
+
+    .header-logo{
+        aspect-ratio: 1;
+        background: white;
+        border-radius: 100%;
+        padding: 30px;
+
+        img{
+            width: 300px;
+        }
+    }
+
+    #header-join{
+        background: $header-button-background;
+        border: none;
+        font-size: var(--font-size-title);
+        padding: 20px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.2s opacity;
+
+        &:hover{
+            opacity: 0.8;
+        }
+
+        &:active{
+            opacity: 0.5;
+        }
+    }
+}
+
+#team-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 30px;
+
+    .person{
+        flex-basis: 30%;
+        flex-grow: 1;
+
+        .person-image img{
+            border-radius: 10px;
+        }
+
+        .person-name{
+            font-size: var(--font-size-title);
+            font-weight: 600;
+            margin: 20px 0;
+        }
+
+        .person-description{
+            line-height: 1.4;
+        }
+    }
 }
